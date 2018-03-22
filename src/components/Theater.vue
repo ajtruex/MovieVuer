@@ -45,7 +45,7 @@ export default {
             baseUrl: 'https://www.omdbapi.com/?apikey=75c7e9fb&t=',
             home: {},
             search: '',
-            imgUrl: 'https://image.tmdb.org/t/p/original',
+            imgUrl: 'https://image.tmdb.org/t/p/w500',
             title: '',
             show: false
         }
