@@ -11,7 +11,7 @@
                     <ul class="list-group-item-text">
                     </ul>
                     <ul class="list-group">
-                        <li class="list-group-item list-group-item-info" v-for="rating in movies.Ratings"><span v-if="rating.Source == 'Internet Movie Database'" class="label label-default label-pill"><icon name="imdb" color="black" scale="3" style="margin-right: .5rem"></icon></span> {{rating.Source}}: {{rating.Value}}</li>
+                        <li class="list-group-item list-group-item-info" v-for="rating in movies.Ratings" :key="rating"><span v-if="rating.Source == 'Internet Movie Database'" class="label label-default label-pill"><icon name="imdb" color="black" scale="3" style="margin-right: .5rem"></icon></span> {{rating.Source}}: {{rating.Value}}</li>
                     </ul>
                 </div>
                 <div class="btn text-left" @click="show=false" style="padding:0; margin: .25rem .25rem 0 .25rem; width: 4rem; cursor: pointer;">
@@ -21,13 +21,13 @@
         </div>
         <br>
         <div class="row card-group" style="cursor: pointer;">
-            <div style="font-family: 'Source Sans Pro';" class="col-sm-3 card" v-for="res in home" @mousedown="title = res.title" @mouseup="result" >
+            <div style="font-family: 'Source Sans Pro';" class="col-sm-3 card" v-for="res in home" @mousedown="title = res.title" :key="res" @mouseup="result" >
                 <img class="card-img-top" style="width: 200px; height: 250px" :src='imgUrl + res.poster_path'>
                 <div class="card-block">
                     <h3 class="card-title">{{res.title}}</h3>
                     <p class="card-text">{{res.overview}}</p>
                 </div>
-                </ul>
+                <!-- </ul> -->
             </div>
         </div>
     </div>

@@ -12,7 +12,7 @@
                 </ul>
                 <ul class="list-group">
                     <!-- <icon name="imdb"></icon> -->
-                    <li class="list-group-item list-group-item-info" v-for="rating in movies.Ratings"><span v-if="rating.Source == 'Internet Movie Database'" class="label label-default label-pill"><icon name="imdb" color="black" scale="3" style="margin-right: .5rem"></icon></span> {{rating.Source}}: {{rating.Value}}</li>
+                    <li class="list-group-item list-group-item-info" v-for="rating in movies.Ratings" :key="rating"><span v-if="rating.Source == 'Internet Movie Database'" class="label label-default label-pill"><icon name="imdb" color="black" scale="3" style="margin-right: .5rem"></icon></span> {{rating.Source}}: {{rating.Value}}</li>
                 </ul>
             </div>
             <div class="btn text-left" @click="show=!show" style="padding:0; margin: .25rem .25rem 0 .25rem; width: 4rem; cursor: pointer;">
@@ -35,7 +35,7 @@ export default {
             baseUrl: 'https://www.omdbapi.com/?apikey=75c7e9fb&t=',
             // home: {},
             search: '',
-            // imgUrl: 'https://image.tmdb.org/t/p/w640',
+            // imgUrl: 'https://image.tmdb.org/t/p/original',
             title: "",
             show: false
         }

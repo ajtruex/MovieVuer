@@ -12,6 +12,7 @@
         <br>
         <br>
         <br>
+    </div>
         <!-- <div v-show="show" class="row justify-content-center">
             <div v-show="show" class="card card-inverse" style="width: 30rem; background-color: #333; border-color: #333;">
                 <img class="card-img-top" :src='movies.Poster' alt="img.png">
@@ -30,10 +31,10 @@
                 </div>
             </div>
         </div> -->
-    </div>
-    </div>
-    </div>
-    </div>
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+
 </template>
 <script>
 import Icon from 'vue-awesome/components/Icon.vue'
@@ -49,7 +50,7 @@ export default {
             baseUrl: 'https://www.omdbapi.com/?apikey=75c7e9fb&t=',
             // home: {},
             search: '',
-            // imgUrl: 'https://image.tmdb.org/t/p/w640',
+            // imgUrl: 'https://image.tmdb.org/t/p/original',
             title: "",
             show: false,
         }
