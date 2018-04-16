@@ -47,7 +47,7 @@ export default {
     data() {
         return {
             movies: {},
-            baseUrl: 'https://www.omdbapi.com/?apikey=75c7e9fb&t=',
+            baseUrl: 'https://www.omdbapi.com/?apikey=98cae6de&t=',
             // home: {},
             search: '',
             // imgUrl: 'https://image.tmdb.org/t/p/original',
