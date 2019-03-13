@@ -7,7 +7,7 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-lg-12">
                         <ul class="nav nav-pills nav-fill">
                             <!-- <router-link to="/" tag="li" class="nav-link" activeClass="active" exact>
                             <a>Home</a>
@@ -22,7 +22,10 @@
                                 <a>Upcoming</a>
                             </router-link>
                             <router-link to="/top" tag="li" class="nav-link" active-class="active" exact>
-                                <a>Top Rated</a>
+                            <a>Top Rated</a>
+                            </router-link>
+                            <router-link to="/login" tag="li" class="nav-link" active-class="active" exact>
+                            <a>Login</a>
                             </router-link>
                         </ul>
                     </div>
@@ -32,16 +35,16 @@
     </nav>
 </template>
 <style>
-    .nav-pills .nav-link.active{
-        background-color: #41B883;
-    }
-    .nav-pills .nav-link.active a{
-        color: black;
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: none;
-        font-weight: bold;
-        color: #41B883;
-    }
+.nav-pills .nav-link.active {
+	background-color: #41b883;
+}
+.nav-pills .nav-link.active a {
+	color: black;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	font-weight: bold;
+	color: #41b883;
+}
 </style>
