@@ -1,7 +1,12 @@
+<div align="center">
+  
+![MovieVuer Logo](/src/assets/movievuer.png)
+
 # MovieVuer
 
-> A movie review aggregator made with Vue.js
 
+> A movie review aggregator made with Vue.js
+</div>
 
 
 ## Build Setup
