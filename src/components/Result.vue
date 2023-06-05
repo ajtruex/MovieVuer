@@ -42,7 +42,7 @@ export default {
     },
 
     created() {
-        this.$http.get('https://api.themoviedb.org/3/movie/now_playing?api_key=6c3a605f23df401b0f1a36baa263c71a&language=en-US&page=1')
+        this.$http.get('https://api.themoviedb.org/3/movie/now_playing?api_key=aebb1ec70575ef6ccfab6d37e09f205d&language=en-US&page=1')
             .then(response => {
                 this.home = response.body.results
             }, response => {});
